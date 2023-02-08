@@ -1,0 +1,127 @@
+unit consultaAddress;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Mask, System.StrUtils,
+  IPPeerClient, REST.Client, Data.Bind.Components, Data.Bind.ObjectScope;
+
+type
+  TfrmConsultaAddress = class(TForm)
+    lblUF: TLabel;
+    lblLogradouro: TLabel;
+    lblCEP: TLabel;
+    lblCidade: TLabel;
+    edtLogradouro: TMaskEdit;
+    edtCEP: TMaskEdit;
+    cmbUF: TComboBox;
+    cmbCidade: TComboBox;
+    btnBusca: TButton;
+    RESTClient1: TRESTClient;
+    RESTRequest1: TRESTRequest;
+    procedure cmbUFChange(Sender: TObject);
+    procedure cmbCidadeChange(Sender: TObject);
+    procedure btnBuscaClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmConsultaAddress: TfrmConsultaAddress;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmConsultaAddress.btnBuscaClick(Sender: TObject);
+var
+
+  logradouro : string;
+
+begin
+      logradouro := edtLogradouro.Text;
+
+      RESTRequest1.Resource := RESTRequest1.Resource + logradouro;
+      RESTRequest1.Execute;
+      ShowMessage('Request enviada');
+end;
+
+procedure TfrmConsultaAddress.cmbCidadeChange(Sender: TObject);
+var
+
+  City : string;
+
+begin
+    if not City.IsEmpty then
+  begin
+    case AnsiIndexStr(City, ['Florianopolis','Curitiba','Porto+Alegre']) of
+
+    0:
+
+    begin
+    RESTRequest1.Resource := RESTRequest1.Resource + 'Florianopolis/';
+    end;
+
+    1:
+
+    begin;
+    RESTRequest1.Resource := RESTRequest1.Resource + 'Curitiba/';
+    end;
+
+    2:
+
+    begin
+    RESTRequest1.Resource := RESTRequest1.Resource + 'Porto+Alegre/';
+    end;
+
+    end;
+  end;
+end;
+
+procedure TfrmConsultaAddress.cmbUFChange(Sender: TObject);
+var
+
+  UF : string;
+
+begin
+
+  UF := cmbUF.Text;
+
+  if not UF.IsEmpty then
+  begin
+    cmbCidade.Enabled := True;
+    case AnsiIndexStr(UF, ['SC','PR','RS']) of
+
+    0:
+
+    begin
+    cmbCidade.Items.Add('Florianopolis');
+    RESTRequest1.Resource := RESTRequest1.Resource + 'SC/';
+    end;
+
+    1:
+
+    begin
+    cmbCidade.Items.Add('Curitiba');
+    RESTRequest1.Resource := RESTRequest1.Resource + 'PR/';
+    end;
+
+    2:
+
+    begin
+    cmbCidade.Items.Add('Porto Alegre');
+    RESTRequest1.Resource := RESTRequest1.Resource + 'RS/';
+    end;
+
+    end;
+  end;
+
+
+
+
+end;
+
+end.

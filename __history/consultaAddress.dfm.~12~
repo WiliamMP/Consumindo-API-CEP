@@ -1,0 +1,113 @@
+object frmConsultaAddress: TfrmConsultaAddress
+  Left = 0
+  Top = 0
+  Caption = 'frmConsultaAddress'
+  ClientHeight = 371
+  ClientWidth = 666
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lblUF: TLabel
+    Left = 265
+    Top = 30
+    Width = 25
+    Height = 19
+    Caption = 'UF:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lblLogradouro: TLabel
+    Left = 18
+    Top = 73
+    Width = 88
+    Height = 19
+    Caption = 'Logradouro:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lblCEP: TLabel
+    Left = 192
+    Top = 202
+    Width = 34
+    Height = 19
+    Caption = 'CEP:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lblCidade: TLabel
+    Left = 442
+    Top = 73
+    Width = 54
+    Height = 19
+    Caption = 'Cidade:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object edtLogradouro: TMaskEdit
+    Left = 112
+    Top = 75
+    Width = 297
+    Height = 21
+    TabOrder = 0
+    Text = ''
+  end
+  object edtCEP: TMaskEdit
+    Left = 232
+    Top = 200
+    Width = 249
+    Height = 21
+    TabOrder = 1
+    Text = ''
+  end
+  object cmbUF: TComboBox
+    Left = 296
+    Top = 32
+    Width = 97
+    Height = 21
+    TabOrder = 2
+    Text = 'UF'
+    OnChange = cmbUFChange
+    Items.Strings = (
+      'SC'
+      'PR'
+      'RS')
+  end
+  object cmbCidade: TComboBox
+    Left = 502
+    Top = 75
+    Width = 145
+    Height = 21
+    Enabled = False
+    TabOrder = 3
+  end
+  object btnBusca: TButton
+    Left = 56
+    Top = 120
+    Width = 569
+    Height = 41
+    Caption = 'Buscar'
+    TabOrder = 4
+  end
+end

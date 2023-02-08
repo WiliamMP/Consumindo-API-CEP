@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/11/17 13:42:19.000.752,=C:\Users\supor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/11/19 09:08:12.000.344,=C:\Users\supor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/11/20 08:22:17.000.306,=C:\Users\supor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/11/23 15:12:47.000.543,=C:\Users\supor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/11/23 17:02:37.000.341,=C:\Users\supor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/12/21 08:33:36.000.830,=C:\Users\supor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/09 14:08:45.000.306,=C:\Users\supor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/03/05 17:04:11.000.820,=C:\Users\supor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/09/28 17:51:07.000.935,=C:\Users\supor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/12/14 10:08:14.000.854,=C:\Users\supor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/02/03 16:56:18.000.458,=C:\Users\supor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/02/06 07:49:41.000.554,C:\Users\supor\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\supor\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2023/02/06 08:21:03.000.942,C:\Users\supor\Documents\wiliamProjetcts\RESTapi\Test.API.dfm=C:\Users\supor\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2023/02/06 08:21:03.000.942,C:\Users\supor\Documents\wiliamProjetcts\RESTapi\Test.API.pas=C:\Users\supor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/02/06 13:03:28.000.681,=C:\Users\supor\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/02/06 13:43:23.000.546,C:\Users\supor\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\supor\Documents\wiliamProjetcts\RESTapi\Project1.dproj</Transaction>
+    <Transaction>2023/02/06 16:37:45.000.473,=C:\Users\supor\Documents\wiliamProjetcts\RESTapi\Unit2.pas</Transaction>
+    <Transaction>2023/02/06 16:39:42.000.620,=C:\Users\supor\Documents\wiliamProjetcts\RESTapi\consultaAddress.pas</Transaction>
+    <Transaction>2023/02/06 16:40:59.000.399,=C:\Users\supor\Documents\wiliamProjetcts\RESTapi\Unit2.pas</Transaction>
+    <Transaction>2023/02/06 16:41:39.000.846,C:\Users\supor\Documents\wiliamProjetcts\RESTapi\consultaAddress.pas=</Transaction>
+    <Transaction>2023/02/06 16:41:56.000.315,C:\Users\supor\Documents\wiliamProjetcts\RESTapi\Unit2.pas=C:\Users\supor\Documents\wiliamProjetcts\RESTapi\consultaAddress.pas</Transaction>
+    <Transaction>2023/02/06 16:41:56.000.315,C:\Users\supor\Documents\wiliamProjetcts\RESTapi\Unit2.dfm=C:\Users\supor\Documents\wiliamProjetcts\RESTapi\consultaAddress.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

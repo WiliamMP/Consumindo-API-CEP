@@ -1,0 +1,17 @@
+program Project1;
+
+uses
+  Vcl.Forms,
+  Test.API in 'Test.API.pas' {Form1},
+  consultaAddress in 'consultaAddress.pas' {frmConsultaAddress};
+
+{$R *.res}
+
+begin
+  ReportMemoryLeaksOnShutdown := True;
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfrmConsultaAddress, frmConsultaAddress);  // não remover, se remover vai causar erro de address
+  Application.Run;
+end.

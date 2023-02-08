@@ -1,0 +1,15 @@
+program Project1;
+
+uses
+  Vcl.Forms,
+  Test.API in 'Test.API.pas' {Form1};
+
+{$R *.res}
+
+begin
+  ReportMemoryLeaksOnShutdown := True;
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.
